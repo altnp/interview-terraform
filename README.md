@@ -1,5 +1,3 @@
-# Part 2
+# Part 3
 
-Create a second Web instance in a different subnet. Add it to the load balancer.
-
-How could you update the ALB to handle upgrading HTTP traffic to HTTPS?
+Update the project to create `N` Web instances evenly distributed by in the existing subnets, add them all to the load balancer, upate the HTML file hosted by Nginx to output `Hello {Instance Number}`.
