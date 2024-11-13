@@ -47,7 +47,12 @@ resource "aws_iam_role_policy" "interview_bastion_policy" {
     Version = "2012-10-17"
     Statement = [
       {
-        Action   = "ec2:*"
+        Action = [
+          "ec2:*",
+          "elasticloadbalancing:*",
+          "acm:*",
+          "route53:*"
+        ]
         Effect   = "Allow"
         Resource = "*"
       }
