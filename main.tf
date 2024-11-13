@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
 resource "aws_security_group" "interview_bastion_allow_ssh" {
@@ -98,5 +98,5 @@ data "aws_subnets" "default" {
 }
 
 data "aws_vpc" "default" {
-  id = "vpc-02f89aa1fb0255e38"
+  default = true
 }
